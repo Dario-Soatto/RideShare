@@ -16,6 +16,10 @@ public class Station {
         pasList. remove(p);
     }
 
-    
+    public int getNumber() {
+        return number;
+    }
+
+
 
 }
