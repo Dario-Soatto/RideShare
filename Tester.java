@@ -1,11 +1,18 @@
+/**
+ * File to test the RideShare project
+ * Creates a new road, populates it, and moves the cars across
+ * Prints the average revenue per car over the trials
+ * @author Steven Li and Dario Soatto
+ * @version 02/08/2023
+ */
 public class Tester {
     public static void main(String [] args) {
         int total = 0;
         int numStations = 32;
-        int numPassengers = 50;
-        int numCars = 20;
-        int numTrials = 100;
-        for(int i = 0; i < 100; i++) {
+        int numPassengers = 30;
+        int numCars = 10;
+        int numTrials = 10000;
+        for(int i = 0; i < numTrials; i++) {
             Road r = new Road(numStations);
             r.popPassengers(numPassengers);
             r.popCars(numCars);

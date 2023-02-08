@@ -1,3 +1,10 @@
+/**
+ * Class for the Road object
+ * Contains an array of stations
+ * Has methods to populate the road and move cars across the road
+ * @author Steven Li and Dario Soatto
+ * @version 02/08/2023
+ */
 import java.util.*;
 public class Road{
     private Station[] stations;

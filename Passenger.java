@@ -1,3 +1,9 @@
+/**
+ * Class for the Passenger object
+ * Tracks the passenger's start, destination, and direction
+ * @author Steven Li and Dario Soatto
+ * @version 02/08/2023
+ */
 public class Passenger {
     private int pDest;
     private int pStart;

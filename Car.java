@@ -1,3 +1,9 @@
+/**
+ * Class for the Car object
+ * Contains an ArrayList of passengers and associated methods
+ * @author Steven Li and Dario Soatto
+ * @version 02/08/2023
+ */
 import java.util.*;
 public class Car {
     
