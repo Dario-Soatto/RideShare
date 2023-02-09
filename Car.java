@@ -2,8 +2,9 @@
  * Class for the Car object
  * Contains an ArrayList of passengers and associated methods
  * @author Steven Li and Dario Soatto
- * @version 02/08/2023
+ * @version 02/09/2023
  */
+
 import java.util.*;
 public class Car {
     
@@ -18,10 +19,12 @@ public class Car {
      * Constructor for the Car object
      * Sets start and destination to the inputted values
      * Sets the direction based on the start and destination
-     * Creates an empty ArrayList of Passengers
+     * A direction of two is used if the car is already at its destination so that the direction differs from a passenger at its destination
+     * Creates an empty ArrayList of passengers
      * @param myStart The location where the car starts
      * @param myDestination The destination for the car
      */
+
     public Car(int myStart, int myDestination) {
         cStart = myStart;
         cDest = myDestination;
@@ -39,6 +42,7 @@ public class Car {
      * Getter method for the destination
      * @return The car's destination
      */
+
     public int getDestination() {
         return cDest;
     }
@@ -47,6 +51,7 @@ public class Car {
      * Getter method for the direction
      * @return The car's direction
      */
+
     public int getDirection() {
         return cDir;
     }
@@ -55,30 +60,34 @@ public class Car {
      * Getter method for the number of passengers in the car
      * @return The number of passengers in the car
      */
+    
     public int getPasNum() {
         return cPasList.size();
     }
 
-/**
- * Method for adding a passenger to the car
- * @param newP The passenger to add to the car
- */
+    /**
+     * Method for adding a passenger to the car
+     * @param newP The passenger to add to the car
+     */
+
     public void addPassenger(Passenger newP) {
         cPasList.add(newP);
     }
     
     /**
-     * Method for removing a passenger from the car
+     * Method for removing a passenger from the car given the passenger
      * @param p The passenger to remove from the car
      */
+
     public void removePassenger(Passenger p) {
         cPasList.remove(p);
     }
 
     /**
-     * Method for removing a passenger from the car
+     * Method for removing a passenger from the car given the index
      * @param i The index of the passenger to be removed
      */
+
     public void removePassenger(int i) {
         cPasList.remove(i);
     }
@@ -88,6 +97,7 @@ public class Car {
      * @param i The index of the passenger to be returned
      * @return The passenger at the index
      */
+
     public Passenger getPassenger(int i) {
         return cPasList.get(i);
     }
@@ -96,6 +106,7 @@ public class Car {
      * Getter method for the ArrayList of passengers in the car
      * @return ArrayList of passengers in the car
      */
+    
     public ArrayList<Passenger> getPassengers() {
         return cPasList;
     }
